@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<!-- Bootstrap CSS CDN-->
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  	<!-- bootstrap css for offline work -->
+  	<!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
+
+  	<!-- Google Fonts -->
+  	<link href="https://fonts.googleapis.com/css?family=Work+Sans:500&display=swap" rel="stylesheet">
+
+	<!-- personal css files -->
+	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+	<title>gabriel campo | good luck being old</title>
+</head>
+<body>
+	<div class="project-header gl-header">
+		<a href="index.html"><img class="back-arrow" src="assets/img/back-arrow.svg" alt=""></a>
+		<h1 class="project-title">good luck being old</h1>
+	</div>
+
+	<div id="map"></div>
+
+	<script>
+
+		function initMap() {
+		  // Create the map.
+		  const map = new google.maps.Map(document.getElementById('map'), {
+		    zoom: 11.1,
+		    center: {lat: 40.74, lng: -73.97505},
+		  });
+
+		  // Load the stores GeoJSON onto the map.
+		  map.data.loadGeoJson('assets/json/goodluck.json', {idPropertyName: 'photoid'});
+
+		  const apiKey = 'AIzaSyDvD13VdqXnHE6v3Awb2Q7slF_coP2WmCI';
+		  const infoWindow = new google.maps.InfoWindow();
+
+		  // Show the information for a store when its marker is clicked.
+		  map.data.addListener('click', (event) => {
+		    const position = event.feature.getGeometry().get();
+		    const image = event.feature.getProperty('image');
+		    const content = `<img src=${image} alt="">`;
+
+		    infoWindow.setContent(content);
+		    infoWindow.setPosition(position);
+		    infoWindow.setOptions({pixelOffset: new google.maps.Size(0, -30)});
+		    infoWindow.open(map);
+		  });
+		}
+
+	</script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvD13VdqXnHE6v3Awb2Q7slF_coP2WmCI&libraries=places&callback=initMap">
+    </script>
+
+
+</body>
+</html>
+
+

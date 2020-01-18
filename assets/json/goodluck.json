@@ -1,0 +1,160 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-73.98202, 40.75397]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Pop",
+                "image": "assets/img/goodluck/pop.jpg",
+                "photoid": "01"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-73.97693, 40.75881]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Bend",
+                "image": "assets/img/goodluck/bend.jpg",
+                "photoid": "02"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-74.01238, 40.70779]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Ghost",
+                "image": "assets/img/goodluck/ghost.jpg",
+                "photoid": "03"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-73.963, 40.67332]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Stack",
+                "image": "assets/img/goodluck/stack.jpg",
+                "photoid": "04"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-73.99686, 40.73751]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Swing",
+                "image": "assets/img/goodluck/swing.jpg",
+                "photoid": "05"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-73.96451, 40.77872]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Itch",
+                "image": "assets/img/goodluck/itch.jpg",
+                "photoid": "06"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-73.97916, 40.57285]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Lift",
+                "image": "assets/img/goodluck/lift.jpg",
+                "photoid": "07"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-73.92605, 40.81828]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Portal",
+                "image": "assets/img/goodluck/portal.jpg",
+                "photoid": "08"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-73.94834, 40.80361]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Hang",
+                "image": "assets/img/goodluck/hang.jpg",
+                "photoid": "09"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-74.01089, 40.70881]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Block",
+                "image": "assets/img/goodluck/block.jpg",
+                "photoid": "10"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-73.98538, 40.76312]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Cross",
+                "image": "assets/img/goodluck/cross.jpg",
+                "photoid": "11"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-73.98583, 40.75266]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Pressue",
+                "image": "assets/img/goodluck/pressure.jpg",
+                "photoid": "12"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-73.99087, 40.73331]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Tile",
+                "image": "assets/img/goodluck/tile.jpg",
+                "photoid": "13"
+            }
+        }
+    ]
+}

@@ -10,16 +10,151 @@
   	<!-- bootstrap css for offline work -->
   	<!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
 
+  	<!-- Google Fonts -->
+  	<link href="https://fonts.googleapis.com/css?family=Work+Sans:500&display=swap" rel="stylesheet">
+
 	<!-- personal css files -->
 	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 
-	<title>Gabriel Campo</title>
+	<title>gabriel campo</title>
 </head>
-<body>
-COMING SOON
+<body class="receipt-page" onload="startTime()">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="receipt-container">
+
+					<!-- Header -->
+					<div class="receipt-header center">
+						<p>Gabriel Campo</p>
+						<p>Photographer</p>
+						<p>Brooklyn, NY</p>
+					</div>
+					<div class="receipt-subheader-container">
+						<div class="receipt-subheader left">
+							<p>Photo Projects</p>
+							<p>See below</p>
+						</div>
+						<div class="receipt-subheader right">
+							<p id="date-time"></p>
+							<p id="ip-address"></p>
+						</div>
+					</div>
+
+					<!-- Item List -->
+					<div class="receipt-portfolio-row-container">
+						<div class="receipt-portfolio-row">
+							<div class="receipt-portfolio-item left">
+								<p><a href="peninsula.html">peninsula (ongoing)</a></p>
+							</div>
+							<div class="receipt-portfolio-item right">
+								<p>2019-2020</p>
+							</div>
+						</div>
+
+						<div class="receipt-portfolio-row">
+							<div class="receipt-portfolio-item left">
+								<p><a href="goodluck.html">good luck being old</a></p>
+							</div>
+							<div class="receipt-portfolio-item right">
+								<p>2018-2019</p>
+							</div>
+						</div>
+
+						<div class="receipt-portfolio-row">
+							<div class="receipt-portfolio-item left">
+								<p><a href="herethere.html">here / there</a></p>
+							</div>
+							<div class="receipt-portfolio-item right">
+								<p>2018</p>
+							</div>
+						</div>
+
+						<!-- <div class="receipt-portfolio-row">
+							<div class="receipt-portfolio-item left">
+								<p><a href="oddsandends.html">odds & ends</a></p>
+							</div>
+							<div class="receipt-portfolio-item right">
+								<p>2017-2020</p>
+							</div>
+						</div> -->
+
+						<div class="receipt-divider"></div>
+						<div class="receipt-portfolio-total">
+							<div class="receipt-total-item left">
+								<p>Total:</p>
+							</div>
+							<div class="receipt-total-item right">
+								<p>forever</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Footer -->
+					<div class="receipt-footer-ongoing">
+						<p>No. of ongoing projects: 2</p>
+						<p>www.sunshinerecorder.co</p>
+					</div>
+					<div class="receipt-footer-contact center">
+						<p>E-Mail: <a href="mailto:campo.gabe@gmail.com">campo.gabe@gmail.com</a></p>
+						<p>Instagram: <a href="https://instagram.com/windows.92" target="_blank">@windows.92</a></p>
+						<p>Design: <a href="http://gabrielcampo.com" target="_blank">www.gabrielcampo.com</a></p>
+					</div>
+					<div class="receipt-footer-thanks center">
+						<p>Thank you for stopping by!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		
+	
+	<script>
+		function startTime() {
+			var today = new Date();
+
+			// Time
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+
+		  	// Date
+			var dd = String(today.getDate()).padStart(2, '0');
+			var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0
+			var yyyy = today.getFullYear();
+
+			var hh = checkHour(h);
+
+		  	m = checkTime(m);
+		  	s = checkTime(s);
+		  	document.getElementById('date-time').innerHTML = hh[0] + ":" + m + ":" + s + " " + hh[1] + " " + mm + "/" + dd + "/" + yyyy
+
+		  	var t = setTimeout(startTime, 500); // keep running this function for 500s
+		}
+
+		function checkHour(i) {
+			if (i == 0) {
+				return [12, "AM"]
+			}
+			if (i < 13) {
+				return [i, "AM"]
+			} else {
+				return [i-12, "PM"]
+			}
+		}
+
+		function checkTime(i) {
+		  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		  return i;
+		}
+
+	</script>
 
 
 </body>

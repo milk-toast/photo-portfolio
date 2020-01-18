@@ -1,0 +1,383 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #fff;
+    font-family: 'Work Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+a, a:hover {
+    color: #000;
+    text-decoration: none;!important;
+}
+
+
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: menlo;
+    src: url(../fonts/Menlo-Regular.otf)
+}
+
+
+header {
+    /*padding-top: 50px;*/
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.back-arrow {
+    width: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 9px;
+}
+
+/* here / there */
+.ht-header {
+    position: fixed;
+    background-color: white;
+}
+
+.ht-list {
+    height: 100vh;
+    overflow: scroll;
+}
+
+.ht-image {
+   padding: 190px 0; 
+   /*margin-left: -30px;
+   margin-right: -30px;*/
+}
+
+.ht-row {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.ht-last-row {
+    padding-bottom: 230px;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* good luck being old */
+#map {
+    height: 100%;
+    z-index: 0!important;
+}
+
+.project-header {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    z-index: 2147483638;
+}
+
+.gl-header {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    /*box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.5)*/
+}
+
+.project-title {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-right: 70px
+}
+
+.gl-map {
+    width: 100%;
+    height: 100%;
+}
+
+/* peninsula */
+
+/*.peninsula-body {
+    background-color: black;
+}
+
+.peninsula-body h1, .peninsula-body p {
+    color: white;
+}*/
+
+.click-target-container {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    height: 95vh;
+    width: 100%;
+    z-index: 1000;
+}
+
+.click-target-left {
+    width: 50%;
+    cursor: w-resize;
+}
+
+.click-target-right {
+    width: 50%;
+    cursor: e-resize;
+}
+
+.right {
+    float: left;
+}
+
+.left {
+    float: right;
+}
+
+.page {
+    float: right;
+}
+
+.peninsula-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.peninsula-container .row {
+    display: none;
+}
+
+.peninsulta-container .row img {
+    max-height: 100%;
+}
+
+.maze {
+    padding-top: 150px;
+}
+
+.peninsula-container .row:hover {
+    cursor: e-resize;
+}
+
+.peninsula-container .first-row {
+    display: flex;
+}
+
+.peninsula-caption {
+    margin: auto;
+    margin-top: 200px;
+    font-size: 16px;
+}
+
+/* contact */
+.contact-header .row {
+    padding-bottom: 50px;
+}
+
+
+/* receipt */
+.receipt-page {
+    background-color: #ffeedd;
+    position: relative;
+    /*background-color: #222;*/
+    background-image: url(../img/sky.jpg);
+}
+
+.receipt-container {
+    padding: 50px 30px 70px 30px;
+    background: linear-gradient(to bottom, #f3f3f3 0, #fff 35%, #f3f3f3 100%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 420px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.receipt-container h1 {
+    font-family: menlo, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+ 
+.receipt-container p {
+    font-family: menlo, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+.receipt-container .center {
+    text-align: center
+}
+
+.receipt-container .left {
+    text-align: left
+}
+
+.receipt-container .right {
+    text-align: right
+}
+
+.receipt-container .receipt-header {
+    padding-bottom: 40px;
+}
+
+.receipt-container .receipt-subheader-container {
+    padding-bottom: 50px;
+}
+
+.receipt-container .receipt-portfolio-row {
+    padding-bottom: 10px;
+}
+
+
+.receipt-subheader-container, 
+.receipt-portfolio-row {
+    display: flex
+}
+
+.receipt-subheader.left{
+    width: 35%
+}
+
+.receipt-subheader.right{
+    width: 65%
+}
+
+.receipt-portfolio-row-container {
+    padding-bottom: 40px;
+}
+
+.receipt-portfolio-item {
+    width: 50%;
+}
+
+.receipt-divider {
+    width: 55%;
+    margin-left: 45%;
+    border-top: dashed 1px black;
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+
+.receipt-portfolio-total {
+    display: flex;
+    width: 50%;
+    margin-left: 50%;
+}
+
+.receipt-total-item {
+    width: 50%;
+}
+
+
+.receipt-footer-ongoing {
+    padding-bottom: 40px;
+}
+
+.receipt-footer-contact {
+    padding-bottom: 20px;
+}
+
+
+/* odds & ends */
+
+
+@keyframes noiseAnimation {
+    0% {
+        transform: translate(0)
+    }
+    10% {
+        transform: translate(-5%,-5%)
+    }
+    20% {
+        transform: translate(-10%,5%)
+    }
+    30% {
+        transform: translate(5%,-10%)
+    }
+    40% {
+        transform: translate(-5%,15%)
+    }
+    50% {
+        transform: translate(-10%,5%)
+    }
+    60% {
+        transform: translate(15%)
+    }
+    70% {
+        transform: translateY(10%)
+    }
+    80% {
+        transform: translate(-15%)
+    }
+    90% {
+        transform: translate(10%,5%)
+    }
+    to {
+        transform: translate(5%)
+    }
+}
+
+.noise-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+  
+.noise {
+    content: "";
+    pointer-events: none;
+    will-change: transform;
+    animation: noiseAnimation 1s steps(4) infinite;
+    opacity: .8;
+    background-image: url("https://uploads-ssl.webflow.com/5cb7be195426f23752acf2dc/5d14bac7c4ad42ee4c94840f_noise_small.png");
+    width: 300%;
+    height: 300%;
+    display: block;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+}
+
+
+
+
