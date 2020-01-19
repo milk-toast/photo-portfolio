@@ -142,18 +142,18 @@ img {
     position: absolute;
     display: flex;
     bottom: 0;
-    height: 95vh;
+    height: 92vh;
     width: 100%;
     z-index: 1000;
 }
 
 .click-target-left {
-    width: 50%;
+    width: 35%;
     cursor: w-resize;
 }
 
 .click-target-right {
-    width: 50%;
+    width: 65%;
     cursor: e-resize;
 }
 
