@@ -77,10 +77,8 @@ img {
 }
 
 .ht-image {
-   padding: 190px 0; 
-   /*margin-left: -30px;
-   margin-right: -30px;*/
-}
+   padding: 190px 0;
+   }
 
 .ht-row {
     padding-top: 150px;
@@ -107,6 +105,7 @@ img {
     height: 50px;
     width: 100%;
     z-index: 2147483638;
+    border-bottom: solid 3px black;
 }
 
 .gl-header {
@@ -378,6 +377,9 @@ img {
     left: -50%;
 }
 
-
-
+@media (max-width: 768px) {
+    img {
+        margin-bottom: 10px;
+    }
+}
 
