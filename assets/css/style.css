@@ -65,6 +65,16 @@ img {
     padding-top: 9px;
 }
 
+.no-pad {
+  margin-right:0;
+  margin-left:0;
+}
+
+.row.no-pad > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
 /* here / there */
 .ht-header {
     position: fixed;
@@ -127,14 +137,6 @@ img {
 }
 
 /* peninsula */
-
-/*.peninsula-body {
-    background-color: black;
-}
-
-.peninsula-body h1, .peninsula-body p {
-    color: white;
-}*/
 
 .click-target-container {
     position: absolute;
