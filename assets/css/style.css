@@ -171,6 +171,7 @@ img {
     position: relative;
     height: auto;
     width: 100%;
+    padding-top: 50px;
 }
 
 .peninsula-container .row {
@@ -376,6 +377,7 @@ img {
     top: -50%;
     left: -50%;
 }
+
 
 @media (max-width: 768px) {
     img {
