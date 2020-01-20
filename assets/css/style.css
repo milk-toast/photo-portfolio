@@ -111,7 +111,7 @@ img {
     height: 50px;
     width: 100%;
     z-index: 2147483638;
-    border-bottom: solid 3px black;
+    /*border-bottom: solid 3px black;*/
     position: fixed;
     background-color: white;
 }
@@ -209,10 +209,10 @@ img {
 
 /* receipt */
 .receipt-page {
-    background-color: #ffeedd;
+    background-color: #fff;
     position: relative;
     /*background-color: #222;*/
-    background-image: url(../img/sky.jpg);
+    /*background-image: url(../img/sky.jpg);*/
 }
 
 .receipt-container {
