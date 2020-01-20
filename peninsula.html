@@ -35,21 +35,19 @@
   <header class="project-header">
     <a href="index.html"><img class="back-arrow" src="assets/img/back-arrow.svg" alt=""></a>
     <h1 class="project-title">peninsula</h1>
-    <h1 class="page project-title">01 / 19</h1>
+    <h1 class="page project-title">01 / 17</h1>
   </header>
 
     <div class="container peninsula-container no-pad">
       <!-- 1 -->
-      <div class="row first-row no-pad">
+      <!-- <div class="row first-row no-pad">
         <div class="col-md-4 offset-md-4 maze">
-          <!-- <p class="peninsula-caption">Wake up, in a solitary place<br>
-          with a polygon sun</p> -->
           <img class="peninsula-img" src="assets/img/peninsula/maze.svg" alt="peninsula">
         </div>
-      </div>
+      </div> -->
 
       <!-- 2 -->
-      <div class="row no-pad">
+      <div class="row first-row no-pad">
         <div class="col-md-7">
           <img class="peninsula-img" src="assets/img/peninsula/peninsula-1.jpg" alt="peninsula">
         </div>
@@ -180,12 +178,11 @@
       </div>
 
       <!-- Outro -->
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-4 offset-md-4">
-          <!-- <p  class="peninsula-caption">I could disappoint you with my smile</p> -->
           <img class="peninsula-img maze" src="assets/img/peninsula/maze-solved.svg" alt="peninsula">
         </div>
-      </div>
+      </div> -->
 
     </div>
 
@@ -204,9 +201,9 @@
         pages[i].style.display = 'flex';
         i++;
         if (i < 10) {
-          document.querySelectorAll('.page')[0].innerHTML = "0" + i + " / 19";
+          document.querySelectorAll('.page')[0].innerHTML = "0" + i + " / 17";
         } else {
-          document.querySelectorAll('.page')[0].innerHTML = i + " / 19";
+          document.querySelectorAll('.page')[0].innerHTML = i + " / 17";
         }
         
         console.log(i);
