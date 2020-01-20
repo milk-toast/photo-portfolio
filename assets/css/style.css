@@ -209,10 +209,12 @@ img {
 
 /* receipt */
 .receipt-page {
-    background-color: #fff;
     position: relative;
-    /*background-color: #222;*/
-    /*background-image: url(../img/sky.jpg);*/
+    background: url(../img/reeds.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .receipt-container {
