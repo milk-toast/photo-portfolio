@@ -23,12 +23,27 @@
 	<title>gabriel campo | good luck being old</title>
 </head>
 <body>
-	<div class="project-header gl-header">
-		<a href="index.html"><img class="back-arrow" src="assets/img/back-arrow.svg" alt=""></a>
-		<h1 class="project-title">good luck being old</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<p><a class="back-link" href="index.html">←</a>    good luck being old</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="map-container">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div id="map"></div>
+	<div class="map-container">
+		
+	</div>
+	
+
+	
 
 	<script>
 
@@ -36,7 +51,88 @@
 		  // Create the map.
 		  const map = new google.maps.Map(document.getElementById('map'), {
 		    zoom: 11.1,
-		    center: {lat: 40.74, lng: -73.97505},
+		    center: {lat: 40.71, lng: -73.97505},
+		    disableDefaultUI: true,
+		    styles: [
+            {elementType: 'geometry', stylers: [{color: '#222222'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#222222'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#bbbbbb'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#bbbbbb'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#bbbbbb'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#2f2f2f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#bbbbbb'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#333333'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#444444'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#bbbbbb'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#333333'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#444444'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#bbbbbb'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#333333'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#bbbbbb'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#555555'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#bbbbbb'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#555555'}]
+            }
+          ]
 		  });
 
 		  // Load the stores GeoJSON onto the map.
