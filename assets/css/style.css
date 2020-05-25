@@ -75,6 +75,14 @@ img {
 
 
 /* peninsula & here / there galleries */
+.sticky-spacer {
+    margin-bottom: 32px;
+}
+
+.sticky-header {
+    position: fixed;
+    z-index: 100000;
+}
 
 .hidden {
     display: none;
@@ -96,6 +104,9 @@ img {
     font-size: 14px;
 }
 
+.centered {
+    text-align: center;
+}
 
 
 
