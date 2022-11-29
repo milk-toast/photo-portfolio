@@ -8,7 +8,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     background-color: #fff;
-    font-family: 'maison', sans-serif;
+    font-family: 'ibm', monospace;
     margin-top: 32px;
 }
 
@@ -42,8 +42,8 @@ ul {
 }
 
 @font-face {
-    font-family: maison;
-    src: url(../fonts/maison-mono.otf)
+    font-family: ibm;
+    src: url(../fonts/IBMPlexMono-Regular.ttf)
 }
 
 
